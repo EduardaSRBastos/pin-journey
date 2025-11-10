@@ -1,0 +1,107 @@
+:root {
+  --main-color: #341099;
+  --second-color: #5747df;
+}
+
+html {
+  scrollbar-color: var(--second-color) var(--main-color);
+  min-height: 100%;
+  min-width: 100%;
+  font-family: "Elms Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: fit-content;
+  left: 44%;
+  z-index: 10;
+  text-align: center;
+  color: var(--second-color);
+  -webkit-text-stroke: 1.5px var(--main-color);
+  text-shadow: 2px 2px 0px var(--main-color);
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: #d5e8eb;
+}
+
+.info {
+  position: fixed;
+  top: 47px;
+  left: 60px;
+  z-index: 5;
+  font-weight: bold;
+}
+
+.log-button {
+  position: fixed;
+  top: 9px;
+  left: 55px;
+  z-index: 5;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Elms Sans", sans-serif;
+  color: var(--second-color);
+  text-shadow: 2px 2px 0px white;
+  word-spacing: -6px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.log-button:hover {
+  color: white;
+  text-shadow: 2px 2px 0px var(--second-color);
+}
+
+.country-label div {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  background: none;
+  margin: auto;
+  display: flex;
+}
+
+.state-label {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: "Elms Sans", sans-serif !important;
+  font-size: 14px;
+}
+
+.state-pin {
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 16px;
+  z-index: 10;
+}

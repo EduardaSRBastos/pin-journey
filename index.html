@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pin Journey</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive map to track and visualize the places you've been. " />
+  <meta name="keywords"
+    content="Pin Journey, Visited cities map, countries, states, places i have been, places been, travel" />
+  <meta name="author" content="Eduarda Bastos" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <meta property="og:title" content="Pin Journey" />
+  <meta property="og:description" content="An interactive map to track and visualize the places you've been. " />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eduardasrbastos.github.io/pin-journey" />
+  <meta property="og:image" content="https://eduardasrbastos.github.io/pin-journey/assets/images/preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pin Journey" />
+  <meta name="twitter:description" content="An interactive map to track and visualize the places you've been. " />
+  <meta name="twitter:image" content="https://eduardasrbastos.github.io/pin-journey/assets/images/preview.png" />
+
+  <link rel="canonical" href="https://eduardasrbastos.github.io/pin-journey" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Pin Journey</h1>
+  </header>
+
+  <main role="main">
+    <div id="map"></div>
+    <div id="info" class="info">World: 0.0%</div>
+    <button id="login" class="log-button">Login with Google</button>
+    <button id="logout" class="log-button" style="display:none;">Logout</button>
+
+  </main>
+
+  <footer role="contentinfo">
+    © <span id="year"></span>
+    <a href="https://github.com/EduardaSRBastos" target="_blank" rel="noopener noreferrer">Eduarda Bastos</a>. Licensed
+    under the MIT License.
+  </footer>
+</body>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore-compat.js"></script>
+
+<!-- Map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+<script src="index.js"></script>
+
+</html>
