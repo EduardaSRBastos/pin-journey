@@ -9,7 +9,7 @@ Promise.all([
   fetch(
     "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
   ).then((r) => r.json()),
-  fetch("/assets/data/admin1.geojson").then((r) => r.json()),
+  fetch("./assets/data/admin1.geojson").then((r) => r.json()),
 ]).then(([countryContinentMapLoaded, countries, adm1]) => {
   countryContinentMap = countryContinentMapLoaded;
 
