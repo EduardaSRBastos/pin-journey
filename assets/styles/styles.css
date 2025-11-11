@@ -105,3 +105,26 @@ footer {
   font-size: 16px;
   z-index: 10;
 }
+
+@media (max-width: 768px) {
+  header {
+    top: -5px;
+    left: 25%;
+    -webkit-text-stroke: 1px var(--main-color);
+    text-shadow: 1px 1px 0px var(--main-color);
+    font-size: 16px;
+  }
+
+  .info {
+    top: 50px;
+    left: 130px;
+  }
+
+  .log-button {
+    top: 80px;
+    left: 5px;
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+  }
+}
